@@ -1,3 +1,4 @@
+"set gui font and size"
 :set guifont=Bitstream\ Vera\ Sans\ Mono\ Bold\ 12
 
 " Maximize GVim on start
@@ -11,6 +12,10 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal! g'\"" | endif
 endif
+
+"Custom printk pressing F5, F6"
+:map <silent> <F5> :exe ":normal i" . 'printk(KERNEL_ERR, "KERNEL DEBUG: line = %d, func = %s \n",__LINE__, __func__);'<cr>
+:map <silent> <F6> :exe ":normal i" . 'printf("DEBUG: line = %d, func = %s \n",__LINE__, __func__);'<cr>
 
 
 source $VIMRUNTIME/vimrc_example.vim
