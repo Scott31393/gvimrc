@@ -17,6 +17,7 @@ endif
 :map <silent> <F5> :exe ":normal i" . 'printk(KERNEL_ERR, "KERNEL DEBUG: line = %d, func = %s \n",__LINE__, __func__);'<cr>
 :map <silent> <F6> :exe ":normal i" . 'printf("DEBUG: line = %d, func = %s \n",__LINE__, __func__);'<cr>
 :map <silent> <F1> :exe ":ls"<cr>
+:map <silent> <C-s> :exe ":w!"<cr>
 :map <silent> <F2> :echo ":e#"<cr>
 :map <C-a> <esc>ggVG<CR>
 :vmap <C-c> "+yi
