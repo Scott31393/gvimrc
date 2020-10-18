@@ -20,6 +20,8 @@ endif
 :map <silent> <C-s> :exe ":w!"<cr>
 :map <silent> <F2> :echo ":e#"<cr>
 :map <C-a> <esc>ggVG<CR>
+:inoremap <C-Z> <C-O>u
+:inoremap <C-Y> <C-O><C-R>
 :vmap <C-c> "+yi
 :vmap <C-x> "+c
 :vmap <C-v> c<ESC>"+p
