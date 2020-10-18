@@ -34,6 +34,9 @@ endif
 :map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 :map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
+"Commit out using ctr+n"
+vnoremap <C-n> :norm 0i//<cr>
+
 source $VIMRUNTIME/vimrc_example.vim
 
 au GUIEnter * simalt ~x
