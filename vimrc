@@ -28,6 +28,11 @@ endif
 :vmap <C-v> c<ESC>"+p
 :imap <C-v> <ESC>"+pa
 
+"Ctrl+Left MouseClick - Go to definition"
+"Ctrl+Right MouseClick"
+:map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+:map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
 source $VIMRUNTIME/vimrc_example.vim
 
 au GUIEnter * simalt ~x
