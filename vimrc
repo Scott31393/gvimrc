@@ -18,7 +18,11 @@ endif
 :map <silent> <F6> :exe ":normal i" . 'printf("DEBUG: line = %d, func = %s \n",__LINE__, __func__);'<cr>
 :map <silent> <F1> :exe ":ls"<cr>
 :map <silent> <F2> :echo ":e#"<cr>
-
+:map <C-a> <esc>ggVG<CR>
+:vmap <C-c> "+yi
+:vmap <C-x> "+c
+:vmap <C-v> c<ESC>"+p
+:imap <C-v> <ESC>"+pa
 
 source $VIMRUNTIME/vimrc_example.vim
 
