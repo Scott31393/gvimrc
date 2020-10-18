@@ -30,6 +30,7 @@ endif
 
 "Ctrl+Left MouseClick - Go to definition"
 "Ctrl+Right MouseClick"
+:set tags=./tags;/
 :map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 :map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
