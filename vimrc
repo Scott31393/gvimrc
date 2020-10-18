@@ -16,6 +16,8 @@ endif
 "Custom printk pressing F5, F6"
 :map <silent> <F5> :exe ":normal i" . 'printk(KERNEL_ERR, "KERNEL DEBUG: line = %d, func = %s \n",__LINE__, __func__);'<cr>
 :map <silent> <F6> :exe ":normal i" . 'printf("DEBUG: line = %d, func = %s \n",__LINE__, __func__);'<cr>
+:map <silent> <F1> :exe ":ls"<cr>
+:map <silent> <F2> :echo ":e#"<cr>
 
 
 source $VIMRUNTIME/vimrc_example.vim
