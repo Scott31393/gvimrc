@@ -19,6 +19,7 @@ endif
 :map <silent> <F1> :exe ":ls"<cr>
 :map <silent> <C-s> :exe ":w!"<cr>
 :map <silent> <F2> :echo ":e#"<cr>
+:map <silent> <C-q> :exe ":q!"<cr>
 :map <C-a> <esc>ggVG<CR>
 :inoremap <C-Z> <C-O>u
 :inoremap <C-Y> <C-O><C-R>
