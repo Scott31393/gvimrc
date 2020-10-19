@@ -28,6 +28,10 @@ endif
 :vmap <C-v> c<ESC>"+p
 :imap <C-v> <ESC>"+pa
 
+"split screen on the right"
+:map <silent> <F12> :exe ":vsplit"<cr>
+
+
 "Ctrl+Left MouseClick - Go to definition"
 "Ctrl+Right MouseClick"
 :set tags=./tags;/
